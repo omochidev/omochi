@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "site": {
+      "title": "Omochi",
+      "description": "Omochi Site",
+      "keywords": "harpjs, site",
+      "lang": "pt_BR",
+      "author": "Omochi"
+    },
+    "urls": {
+      "development": "http://localhost:9000",
+      "test": "http://omochi.com.br/deploy/omochi",
+      "production": "http://omochi.com.br"
+    }
+  }
+}

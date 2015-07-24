@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+npm-debug.log
+
+node_modules
+bower_components
+.sass-cache
+www
+
+secrets.json

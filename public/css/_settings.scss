@@ -1,0 +1,68 @@
+// Bootstrap imports and settings
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss";
+
+@import "_mixins.scss";
+
+// Reset
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+body, input {
+	font: 400 $font-size-base $font-family-base;
+	color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+input[type="text"], textarea {
+	border: none;
+}
+
+textarea {
+	resize: none;
+}
+
+button {
+	border: none;
+}
+
+
+// Grid
+.container {
+	$grid-gutter-width-container: $grid-gutter-width !default;
+
+	@include container-fixed($grid-gutter-width-container);
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+}
